@@ -1,0 +1,64 @@
+.btn {
+    padding: .5rem 3rem 0 3rem;
+    background-color: $color-white;
+    border-radius: 5rem;
+    font-family: $Font-BodyCTA;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: -.3rem .2rem .5rem rgba(128, 141, 153, .1);
+
+    @media only screen and (max-width: $Tablet-landscape) {
+        align-self: center;
+        padding: 1rem 3rem 1rem 3rem;
+    }
+
+    @media only screen and (max-width: $Phone) {
+        padding: 0rem 1rem .2rem 1rem;
+    }
+
+    &:hover,
+    &:active {
+        .btn-link {
+            color: hsl(208, 11%, 55%);
+        }
+    }
+
+    &-link {
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: $color-black;
+
+            @media only screen and (max-width: $Phone) {
+                font-size: .7rem;
+            }            
+        }
+    }
+
+    &-CTA {
+        display: inline-block;
+        padding: .7rem 3rem .7rem 3rem;
+        cursor: pointer;
+        border-radius: 5rem;
+        background-color: $color-primary;
+        box-shadow: -.3rem .2rem .5rem rgba(128, 141, 153, .1);
+
+        &:hover,
+        &:active {
+            background-color: hsl(322, 100%, 80%);
+        }
+
+        
+        .btn {
+            &-link {
+                font-family: $Font-BodyCTA;
+                font-size: .8rem;
+                font-weight: 700;
+                    &:link,
+                    &:visited {
+                        color: $color-secondary-light;
+                    }
+            }    
+        }   
+    }
+}

@@ -1,0 +1,34 @@
+//COLORS
+$color-primary:  hsl(322, 100%, 66%);
+
+$color-secondary-light: hsl(193, 100%, 96%);
+$color-secondary-dark: hsl(192, 100%, 9%);
+
+$color-gray: hsl(208, 11%, 55%);
+
+$color-white: #fff;
+$color-black: #000;
+
+//FONT
+$Font-headings: 'Poppins', sans-serif; 
+$Font-BodyCTA: 'Open Sans', sans-serif; // Body = 400, CTA = 700
+
+// MEDIA QUERY MANAGER
+/* 
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet Landscape
+[1200 - 1800px] is where our normal styles apply
+1800px + : Big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop*/
+
+//MEDIA QUERIES
+$Tablet-landscape: 68.75em; // 1200px / 16px
+$Tablet-portrait: 55.625em; // 890px / 16px
+$Phone: 37.5em; // 600px / 16px  
+

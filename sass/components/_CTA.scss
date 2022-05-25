@@ -1,0 +1,37 @@
+.CTA {
+    background-color: $color-white;
+    text-align: center;
+    box-shadow: -.3rem .2rem 1rem rgba(128, 141, 153, .2);
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 50%;
+    padding: 2.5rem 2.5rem 2rem 2.5rem;
+    border-radius: 2rem;
+    position: relative;
+    transform: translateY(50%);
+
+    z-index: 10;
+
+    @media only screen and (max-width: $Phone) {
+        width: 95%;
+        padding: 2.5rem .5rem 2rem .5rem;
+        box-shadow: -.3rem .2rem 1rem rgba(128, 141, 153, .3);
+    }
+
+    &-text {
+        font-family: $Font-headings;
+        font-weight: 600;
+        margin-bottom: 2rem;
+
+        @media only screen and (max-width: $Phone) {
+            font-size: .7rem;
+            padding-bottom: 1rem;
+            margin-bottom: auto;
+            margin-top: auto;
+        }
+    }
+
+    .btn-CTA {
+        box-shadow: -.3rem .2rem 1rem rgba(128, 141, 153, .7);
+    }
+}

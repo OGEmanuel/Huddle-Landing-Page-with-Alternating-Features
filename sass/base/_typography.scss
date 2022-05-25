@@ -1,0 +1,26 @@
+body {
+    font-family: $Font-BodyCTA;
+    font-weight: 400;
+}
+
+.header {
+
+    &-content {
+
+        &__text {
+            margin-top: 3.5rem;
+            &--main {
+                font-family: $Font-headings;
+                font-size: 1.7rem;
+                margin-bottom: 1.5rem;
+            }
+
+            &--sub {
+                font-size: .8rem;
+                font-weight: 400;
+                line-height: 1.7;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

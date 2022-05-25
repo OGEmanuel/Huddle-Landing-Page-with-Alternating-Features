@@ -1,0 +1,112 @@
+.feature {
+    margin: 0 4rem;
+    @media only screen and (max-width: $Phone) {
+        margin: 0 1.5rem;
+    }
+    
+
+    &-box {
+        display: flex;
+        border-radius: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: -.3rem .2rem 1rem rgba(128, 141, 153, .3);
+        justify-content: space-between;
+        align-items: center;
+
+        @media only screen and (max-width: $Phone) {
+            flex-direction: column-reverse;
+        }
+
+        &--alt {
+            @media only screen and (max-width: $Phone) {
+                flex-direction: column;
+            }
+        }
+
+        &__text {
+            width: 45%;
+            text-align: left;
+            margin: 10rem 0 10rem 3rem;
+
+            @media only screen and (max-width: $Tablet-portrait) {
+                margin: 3rem 0 0rem 3rem;
+            }
+
+            @media only screen and (max-width: $Phone) {
+                width: 100%;
+                text-align: center;
+                margin: 1rem 1rem 2rem 1rem;
+            }
+            &--main {
+                font-family: $Font-headings;
+                font-weight: 600;
+                font-size: 1.5rem;
+                margin-bottom: .5rem;
+            }
+
+            &--sub {
+                font-weight: 400;
+                line-height: 1.7;
+                color: $color-gray;
+                @media only screen and (max-width: $Phone) {
+                    font-size: .7rem;
+                    padding: 0 1rem 0 1rem;
+                }
+            }
+        }
+
+        &__img {
+            display: flex;
+            margin: 5rem .1rem 5rem 0;
+            padding-right: 2rem;
+
+            @media only screen and (max-width: $Tablet-landscape) {
+                margin: 7rem .1rem 7rem 0;
+            }
+
+            @media only screen and (max-width: $Tablet-portrait) {
+                margin: 3rem .1rem 3rem 3rem;
+            }
+
+            @media only screen and (max-width: $Phone) {
+                margin-bottom: 1.5rem;
+            }
+
+            .img {
+                width: 25rem;
+
+                @media only screen and (max-width: $Tablet-landscape) {
+                    width: 20rem;
+                }
+
+                @media only screen and (max-width: $Tablet-portrait) {
+                    width: 15rem;
+                }
+            }
+        }
+    }
+
+    .img-alt {
+        margin-left: 3rem;
+        padding-right: 0;
+
+        @media only screen and (max-width: $Tablet-portrait) {
+            width: 20rem;
+            margin: 3rem .1rem 3rem 3rem;
+        }
+
+        @media only screen and (max-width: $Phone) {
+            width: 15rem;
+            margin: 3rem 0 1.5rem .5rem;
+        }
+    }
+
+    .text-alt {
+        padding-right: 2rem;
+        margin: 10rem 0 10rem 0;
+
+        @media only screen and (max-width: $Tablet-portrait) {
+            margin: 3rem .1rem 3rem 3rem;
+        }
+    }
+}

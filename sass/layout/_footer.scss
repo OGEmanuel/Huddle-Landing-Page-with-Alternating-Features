@@ -1,0 +1,138 @@
+.footer {
+    background-color: $color-secondary-dark;
+    padding: 10rem 4rem 5rem 4rem;
+
+    @media only screen and (max-width: $Phone) {
+        padding: 10rem 1.5rem 2rem 1.5rem; 
+    }
+
+    .logo-box__logo {
+        margin-bottom: 2.5rem;
+    }
+
+    &-box__main {
+        display: flex;
+
+        @media only screen and (max-width: $Phone) {
+            flex-direction: column; 
+        }
+
+        .address-box {
+            width: 35%;
+
+            @media only screen and (max-width: $Phone) {
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+
+            &__item {
+                display: flex;
+                align-items: flex-start;
+                color: $color-white;
+                font-size: .8rem;
+
+                .icon {
+                    margin-right: 1.5rem;
+                    padding-top: .3rem;
+                }
+            }
+        }
+
+        .link-box {
+            display: flex;
+            flex-direction: column;
+            margin: 0 5rem 0 5rem;
+
+            @media only screen and (max-width: $Tablet-portrait) {
+                margin: 0 2rem 0 2rem;
+            }
+
+            @media only screen and (max-width: $Phone) {
+                width: 50%;
+                margin: 0;
+
+                &--2 {
+                    margin-top: 0;
+                }
+            }
+
+            &--item {
+                margin-bottom: 1rem;
+
+                @media only screen and (max-width: $Phone) {
+                    margin-bottom: 2rem;
+                }
+                
+
+                &:link,
+                &:visited {
+                    color: $color-white;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .socials {
+            display: flex;
+            align-items: flex-start;
+
+            @media only screen and (max-width: $Phone) {
+                justify-content: center;
+            }
+
+            svg {
+                fill: $color-white;
+                &:hover {
+                    fill: $color-primary;
+                }
+            }
+            .sm {
+                width: 1.5rem;
+                margin-right: 1rem;
+
+                &-f {
+                    width: 1rem;
+                }
+            }
+        }
+        
+    }
+
+    &-box__sub {
+        display: flex;
+        margin-top: 2rem;
+        justify-content: space-between;
+        color: $color-white;
+
+        @media only screen and (max-width: $Phone) {
+            display: flex;
+            flex-direction: column-reverse;
+
+            p {
+                margin-bottom: 1rem;
+                font-size: .8rem;
+
+            }
+        }
+
+        a {
+            &:link,
+            &:visited {
+                color: $color-white;
+                display: inline-block;
+                transition: all .2s;
+
+                &:hover {
+                    transform: skewX(20deg) scale(1.2);
+                    color: $color-primary;
+                    background-color: $color-secondary-dark;
+                }
+
+            }
+        }
+    }
+}

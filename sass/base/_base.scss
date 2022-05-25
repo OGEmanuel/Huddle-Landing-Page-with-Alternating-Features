@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    //this defines what 1rem is
+    font-size: 112.5%; //1rem = 18px; 18px/16px = 62.5%
+
+    @media only screen and (max-width: $Tablet-landscape) {
+        font-size: 100%;
+    }
+
+    @media only screen and (max-width: $Tablet-portrait) {
+        font-size: 75%;
+    }
+
+    @media only screen and (max-width: $Phone) {
+        font-size: 112.5%;
+    }
+
+
+}
+
+body {
+    overflow-x: hidden;
+}

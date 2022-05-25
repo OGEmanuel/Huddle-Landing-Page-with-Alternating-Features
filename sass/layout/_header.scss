@@ -1,0 +1,98 @@
+.header {
+    background-image: url(/img/bg-hero-desktop.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem 4rem 4rem 4rem;
+    background-color: $color-secondary-light;
+
+    @media only screen and (max-width: $Phone) {
+        background-image: url(/img/bg-hero-mobile.svg);
+        padding: 2rem 1rem 1rem 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .logo-box {
+        display: flex;
+        justify-content: space-between;
+
+        &__logo {
+
+            .logo {
+                @media only screen and (max-width: $Phone) {
+                    width: 5rem;
+                }
+            }
+        }
+        
+        @media only screen and (max-width: $Tablet-portrait) {
+            margin-bottom: auto;
+        }
+    }
+
+    &-content {
+        display: flex;
+        margin: 0 auto;
+        gap: 2.5rem;
+
+        @media only screen and (max-width: $Phone) {
+            display: block;
+        }
+        
+
+        &__text {
+            width: 50%;
+            padding: 2.5rem 0 2rem 0;
+
+            @media only screen and (max-width: $Tablet-landscape) {
+                padding: 1rem 0 2rem 0;
+            }
+
+            @media only screen and (max-width: $Tablet-portrait) {
+                padding: 5rem 0 2rem 0;
+            }
+
+            @media only screen and (max-width: $Phone) {
+                width: 100%;
+                padding: 1rem 0 1rem 0;
+                text-align: center;
+            }
+
+            &--main {
+                @media only screen and (max-width: $Phone) {
+                    font-size: 1.5rem;
+                    padding-bottom: 0;
+                }
+                
+            }
+        }
+
+        &__img {
+            width: 55%;
+            display: flex;
+            justify-content: flex-end;
+
+            @media only screen and (max-width: $Tablet-portrait) {
+                padding: 2rem 0 2rem 0;
+                width: 50%;
+            }
+
+            @media only screen and (max-width: $Phone) {
+                width: 100%;
+                padding-bottom: 1rem;
+            }
+
+            &--img {
+                width: 100%;
+
+                @media only screen and (max-width: $Tablet-portrait) {
+                    padding: 2rem 0 2rem 0;
+                }
+
+                @media only screen and (max-width: $Phone) {
+                    padding: 0 1rem 1rem 1rem;
+                }
+            }
+        }
+    }
+}
