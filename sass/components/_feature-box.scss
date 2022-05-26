@@ -108,5 +108,9 @@
         @media only screen and (max-width: $Tablet-portrait) {
             margin: 3rem .1rem 3rem 3rem;
         }
+
+        @media only screen and (max-width: $Phone) {
+            margin-top: 1rem;
+        }
     }
 }
