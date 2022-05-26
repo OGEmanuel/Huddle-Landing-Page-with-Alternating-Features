@@ -29,7 +29,7 @@
             margin: 10rem 0 10rem 3rem;
 
             @media only screen and (max-width: $Tablet-portrait) {
-                margin: 3rem 0 0rem 3rem;
+                margin: 1rem 0 0rem 3rem;
             }
 
             @media only screen and (max-width: $Phone) {
@@ -109,8 +109,18 @@
             margin: 3rem .1rem 3rem 3rem;
         }
 
+
         @media only screen and (max-width: $Phone) {
-            margin-top: 1rem;
+            padding: 0;
+            margin: 1rem 1rem 2rem 1rem; 
+
+            &__main {
+                padding: 0 1rem 0 1rem;
+            }
+
+            &__sub {
+                padding: 0 1rem 0 1rem;
+            }
         }
     }
 }
